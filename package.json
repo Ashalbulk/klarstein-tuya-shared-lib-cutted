@@ -1,0 +1,59 @@
+{
+  "name": "klarstein-app-components",
+  "version": "0.1.0",
+  "description": "Shared components and functionality for klarstein type app",
+  "main": "src/index",
+  "scripts": {
+    "eslint": "eslint --ext js *.js src",
+    "lint": "eslint --ext js *.js src",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+  },
+  "peerDependencies": {
+    "@invertase/react-native-apple-authentication": "^2.1.1",
+    "@react-native-async-storage/async-storage": "^1.14.1",
+    "@react-native-community/geolocation": "^2.0.2",
+    "@react-native-firebase/auth": "11.1.2",
+    "@react-native-google-signin/google-signin": "^6.0.0",
+    "crypto-js": "^4.0.0",
+    "i18next": "^21.6.15",
+    "kumulos-react-native": "5.4.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "ramda": "^0.27.1",
+    "react": "17.0.1",
+    "react-i18next": "^11.16.5",
+    "react-native": "0.64.0",
+    "react-native-device-info": "^8.0.6",
+    "react-native-fbsdk": "^3.0.0",
+    "react-native-geocoding": "^0.5.0",
+    "react-native-localize": "^2.0.2",
+    "react-native-restart": "^0.0.22",
+    "reactotron-react-native": "^5.0.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "eslint"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/eslint-parser": "^7.16.5",
+    "eslint": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-native": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-wdio": "^7.4.2",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "pre-commit": "^1.2.2",
+    "prettier-eslint": "^13.0.0"
+  }
+}

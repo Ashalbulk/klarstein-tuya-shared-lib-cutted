@@ -1,0 +1,3 @@
+//loaders
+export const HOME_ENABLE_LOADER = 'HOME_ENABLE_LOADER';
+export const HOME_DISABLE_LOADER = 'HOME_DISABLE_LOADER';

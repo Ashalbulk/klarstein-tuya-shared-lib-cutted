@@ -1,0 +1,3 @@
+export const GET_LABELS = 'GET_LABELS';
+export const GET_LABELS_SUCCESS = 'GET_LABELS_SUCCESS';
+export const GET_LABELS_FAILED = 'GET_LABELS_FAILED';
