@@ -85,3 +85,10 @@ export function removeAllListenersSuccess() {
     type: types.REMOVE_LISTENERS_ON_LOGOUT_SUCCESS,
   };
 }
+
+export function checkVerifiedUserExists(loginProcess) {
+  return {
+    type: types.CHECK_VERIFIED_USER_EXISTS,
+    loginProcess,
+  };
+}

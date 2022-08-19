@@ -26,6 +26,7 @@ export default function* loginFirebase(action) {
   const tuyaResponse = yield call(loginTuya, { email, password });
   if (tuyaResponse?.success) {
     yield put(loginActions.setDataAfterResponse(tuyaResponse.data));
+    yield put(loginActions.checkVerifiedUserExists(true));
   } else {
     const errorMessage = I18n.t(tuyaResponse?.errorMessage);
     yield put(loginActions.loginFailed(errorMessage));

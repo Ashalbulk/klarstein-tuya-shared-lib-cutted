@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
 
-import home from './home';
-import hubs from './hubs';
+import list from './hubList';
 
 export default combineReducers({
-  home,
-  hubs,
+  list,
 });

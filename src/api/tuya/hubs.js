@@ -1,4 +1,3 @@
-import { HUB_ROLES } from '../../constants/hubs';
 import helpers from '../../helpers';
 import * as TuyaHomeApi from '../../tuya-sdk/lib/TuyaHomeApi';
 import * as TuyaHomeManagerApi from '../../tuya-sdk/lib/TuyaHomeManagerApi';
@@ -78,37 +77,6 @@ export const changeHubLocation = (homeId, name, lon, lat, geoName) => {
 
 export const getHubMemberList = homeId => {
   return TuyaHomeMemberApi.queryMemberList({ homeId })
-    .then(data => {
-      return { success: true, data };
-    })
-    .catch(helpers.apiHelper.handleError);
-};
-
-export const addHubMember = (homeId, name, userAccount, countryCode, role, headPic, autoAccept) => {
-  return TuyaHomeMemberApi.addMember({
-    homeId,
-    name,
-    userAccount,
-    countryCode,
-    role,
-    admin: role > HUB_ROLES.MEMBER,
-    headPic,
-    autoAccept,
-  })
-    .then(data => {
-      return { success: true, data };
-    })
-    .catch(helpers.apiHelper.handleError);
-};
-
-export const updateHubMember = (homeId, memberId, name, role) => {
-  return TuyaHomeMemberApi.updateMember({
-    homeId,
-    memberId,
-    name,
-    role,
-    admin: role > HUB_ROLES.MEMBER,
-  })
     .then(data => {
       return { success: true, data };
     })

@@ -47,7 +47,7 @@ export default createReducer(initialState, {
   [loginTypes.SET_DATA_AFTER_RESPONSE](state, { user }) {
     return {
       ...state,
-      user,
+      user: user?.user,
     };
   },
   [loginTypes.LOGIN_FAILED](state, { errorMessage }) {
